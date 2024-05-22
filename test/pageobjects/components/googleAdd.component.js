@@ -1,12 +1,10 @@
-export default class GoogleAdd{
-    get googleAddWindow(){
-        return $('vli.vliIgnore');
-    }
+import {$} from "@wdio/globals";
 
-
-     async  tryCloseGoogleAd () {
+export default class GoogleAd {
+    async tryClose() {
         try {
-            await this.googleAddWindow.click()
-        } catch (ignored) {}
+            await $('vli.vliIgnore').click()
+        } catch (ignored) {
+        }
     }
 }

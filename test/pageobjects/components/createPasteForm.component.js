@@ -9,6 +9,7 @@ const selectors = {
     createNewPasteBtn: 'button[type="submit"]'
 };
 
+
 export default class CreatePasteFormComponent {
 
     get rootEl() {
@@ -19,11 +20,19 @@ export default class CreatePasteFormComponent {
         return this.rootEl.$(selectors[param])
     }
 
-    async clickExpirationAndSelect (expiration) {
-        await this.item('setExpiration').click()
-        await $(`//li[text()='${expiration}']`).click()
+    get googleAddWindow() {
+        return $('vli.vliIgnore');
     }
 
-   x
+    async tryCloseGoogleAd() {
+        try {
+            await this.googleAddWindow.click()
+        } catch (ignored) {
+        }
+    }
 
+
+    get codeText() {
+        return $('pre').getText()
+    }
 }

@@ -20,6 +20,8 @@
     "globals": "^15.0.0"
   },
   "dependencies": {
-    "@wdio/globals": "^8.36.1"
+    "@wdio/globals": "^8.36.1",
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5"
   }
 }

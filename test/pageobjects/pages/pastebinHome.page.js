@@ -1,8 +1,8 @@
-import {browser} from "@wdio/globals";
+import {$, browser} from "@wdio/globals";
 import CreatePasteFormComponent from "../components/createPasteForm.component.js";
 import Header from "../components/common/header.component.js";
 import PopUp from "../components/popUp.component.js";
-import GoogleAdd from "../components/googleAdd.component.js";
+import GoogleAd from "../components/googleAdd.component.js";
 
 export default class PastebinHomePage {
     async open() {
@@ -13,15 +13,20 @@ export default class PastebinHomePage {
         this.createPasteForm = new CreatePasteFormComponent()
         this.header = new Header()
         this.popUp = new PopUp()
-        this.googleAdd = new GoogleAdd()
+        this.googleAdd = new GoogleAd()
     }
 
-    async selectExpiration (expiration) {
+    async clickExpirationAndSelect (expiration) {
+        await this.createPasteForm.item('setExpiration').click()
+        await $(`//li[text()='${expiration}']`).click()
+    }
+
+    async selectExpiration(expiration) {
         try {
-            await this.createPasteForm.clickExpirationAndSelect(expiration)
+            await this.clickExpirationAndSelect(expiration)
         } catch (e) {
-            await this.googleAdd.tryCloseGoogleAd()
-            await this.createPasteForm.clickExpirationAndSelect(expiration)
+            await this.googleAdd.tryClose()
+            await this.clickExpirationAndSelect(expiration)
         }
     }
 
