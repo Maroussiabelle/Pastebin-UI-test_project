@@ -1,15 +1,19 @@
 import {$} from "@wdio/globals";
 
+const selectors = {
+    loginButton: 'a.btn-sign.sign-in',
+    signInButton: 'a.btn-sign.sign-up',
+    createPasteButton: 'a.header__btn'
+};
+
 export default class Header {
-    getLoginBtn() {
-        return $('a.btn-sign.sign-in');
+
+    get rootEl() {
+        return $('div.header__container')
     }
 
-    getSignBtn() {
-        return $('a.btn-sign.sign-up')
-    }
 
-    getCreatePasteBtn() {
-        return $('a.header__btn')
+    item(param) {
+        return this.rootEl.$(selectors[param])
     }
 }
