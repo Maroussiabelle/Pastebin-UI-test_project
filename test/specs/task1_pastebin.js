@@ -1,8 +1,7 @@
 import PastebinHomePage from '../pageobjects/pages/pastebinHome.page.js';
-import {TASK1_TEST_DATA} from '../data/testData.js';
+import {TASK1_TEST_DATA} from '../data/task1_testData.js';
 import {expect} from 'chai';
 import PastebinUserPastes from '../pageobjects/pages/pastebinPasteOverview.page.js';
-
 const pastebinHomepage = new PastebinHomePage();
 const pastebinPasteOverviewPage = new PastebinUserPastes();
 
@@ -16,7 +15,7 @@ describe('WebDriver Task 1 suite', () => {
     await pastebinHomepage.selectExpiration(TASK1_TEST_DATA.pasteExpiration);
     await pastebinHomepage.createPasteForm.item('title').setValue((TASK1_TEST_DATA.pasteName));
     await pastebinHomepage.createPasteForm.item('createNewPasteBtn').click();
-    expect(pastebinPasteOverviewPage.getPageTitles()).to.include(await pastebinPasteOverviewPage.getPageTitle());
+    expect(pastebinPasteOverviewPage.getPageTitles1()).to.include(await pastebinPasteOverviewPage.getPageTitle());
     expect(await pastebinPasteOverviewPage.pageContent.item('pastedTextBox').getText()).to.include(TASK1_TEST_DATA.codeToPaste);
     expect((await pastebinPasteOverviewPage.pageContent.item('expirationTime').getHTML(false)).trim()).to.equal(TASK1_TEST_DATA.pasteExpirationResult);
   });
