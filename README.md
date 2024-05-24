@@ -25,7 +25,7 @@ When performing a task, you must use the capabilities of WebdriverIO, a unit tes
 1. Open https://pastebin.com/ in any browser.
 
 2. Create 'New Paste' with the following attributes:
-   * Code:
+   * Code:  
      git config --global user.name  "New Sheriff in Town"  
      git reset $(git commit-tree HEAD^{tree} -m "Legacy code")  
      git push origin master --force  
