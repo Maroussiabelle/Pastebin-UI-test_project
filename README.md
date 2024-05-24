@@ -26,9 +26,9 @@ When performing a task, you must use the capabilities of WebdriverIO, a unit tes
 
 2. Create 'New Paste' with the following attributes:
    * Code:
-     git config --global user.name  "New Sheriff in Town"
-     git reset $(git commit-tree HEAD^{tree} -m "Legacy code")
-     git push origin master --force
+     git config --global user.name  "New Sheriff in Town"  
+     git reset $(git commit-tree HEAD^{tree} -m "Legacy code")  
+     git push origin master --force  
    * Syntax Highlighting: "Bash"
    * Paste Expiration: "10 Minutes"
    * Paste Name / Title: "how to gain dominance among developers"
