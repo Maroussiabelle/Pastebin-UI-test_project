@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
     "task1": "wdio run wdio.conf.js --spec test/specs/task1_pastebin.js ",
-    "task2": "wdio run wdio.conf.js --spec test/specs/task2_pastebin.js "
+    "task2": "wdio run wdio.conf.js --spec test/specs/task2_pastebin.js ",
+    "task3": "wdio run wdio.conf.js --spec test/specs/task3_pastebin.js "
   },
   "type": "module",
   "keywords": [],
