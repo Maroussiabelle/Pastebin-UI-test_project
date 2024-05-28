@@ -28,4 +28,8 @@ export default class PastebinUserPastes {
     return this.pageContent.item('expirationTime')
         .getHTML(false);
   }
+
+  get bashButtonText() {
+    return this.pageContent.item('bashButton').getHTML(false);
+  }
 }

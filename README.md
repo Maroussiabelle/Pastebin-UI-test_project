@@ -37,6 +37,7 @@ When performing a task, you must use the capabilities of WebdriverIO, a unit tes
    * Browser page title matches 'Paste Name / Title'
    * Syntax is suspended for bash
    * Check that the code matches the one from paragraph 2
+   * Expiration time is 10 minutes
 
 
 

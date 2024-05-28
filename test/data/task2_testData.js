@@ -7,6 +7,7 @@ git push origin master --force`,
   pasteExpiration: '10 Minutes',
   pasteName: 'how to gain dominance among developers',
   pasteExpirationResult: '10 min',
+  bashButtonText: 'Bash',
 };
 
 console.log(TASK2_TEST_DATA.codeToPaste);
