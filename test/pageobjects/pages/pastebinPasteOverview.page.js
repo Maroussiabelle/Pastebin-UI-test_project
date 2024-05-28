@@ -16,6 +16,9 @@ export default class PastebinUserPastes {
   getPageTitles2() {
     return process.env.PAGE_TITLES2.split(',');
   }
+  getPageTitles3() {
+    return process.env.PAGE_TITLES3.split(',');
+  }
 
   get pasteText() {
     return this.pageContent
