@@ -39,5 +39,25 @@ When performing a task, you must use the capabilities of WebdriverIO, a unit tes
    * Check that the code matches the one from paragraph 2
    * Expiration time is 10 minutes
 
+## Wdio Task 3 decription
+
+### Automate the following script:
+
+1. Open https://pastebin.com/ in any browser.
+2. Log in
+
+3. Create 'New Paste' with the following attributes:
+   * Code:  
+    "This is a first paste of a registered user"
+   * Syntax Highlighting: "CSS"
+   * Paste Expiration: "1 week"
+   * Paste Name / Title: "First paste"
+
+4.Save 'paste' and check the following:
+   * Browser page title matches 'Paste Name / Title'
+   * Syntax is suspended for CSS
+   * Check that the code matches the one from paragraph 3
+   * Expiration time is 1 week
+
 
 
