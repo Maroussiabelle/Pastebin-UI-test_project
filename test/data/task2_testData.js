@@ -10,6 +10,4 @@ git push origin master --force`,
   bashButtonText: 'Bash',
 };
 
-console.log(TASK2_TEST_DATA.codeToPaste);
-
 
