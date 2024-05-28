@@ -3,4 +3,4 @@ export const TASK1_TEST_DATA = {
   pasteExpiration: '10 Minutes',
   pasteName: 'helloweb',
   pasteExpirationResult: '10 min',
-};
+}

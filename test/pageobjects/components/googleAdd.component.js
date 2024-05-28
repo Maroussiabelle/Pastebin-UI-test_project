@@ -1,10 +1,10 @@
-import {$} from "@wdio/globals";
+import {$} from '@wdio/globals'
 
 export default class GoogleAd {
-    async tryClose() {
-        try {
-            await $('vli.vliIgnore').click()
-        } catch (ignored) {
-        }
+  async tryClose() {
+    try {
+      await $('vli.vliIgnore').click()
+    } catch (ignored) {
     }
+  }
 }

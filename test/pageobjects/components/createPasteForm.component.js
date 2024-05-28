@@ -1,4 +1,4 @@
-import {$} from '@wdio/globals';
+import {$} from '@wdio/globals'
 
 const selectors = {
   pasteTextArea: '.textarea.-form.js-paste-code',
@@ -6,31 +6,31 @@ const selectors = {
   syntaxHighlight: 'span#select2-postform-format-container',
   title: 'input#postform-name',
   createNewPasteBtn: 'button[type="submit"]',
-};
+}
 
 
 export default class CreatePasteFormComponent {
   get rootEl() {
-    return $('.js-create-form.form-horizontal');
+    return $('.js-create-form.form-horizontal')
   }
 
   item(param) {
-    return this.rootEl.$(selectors[param]);
+    return this.rootEl.$(selectors[param])
   }
 
   get googleAddWindow() {
-    return $('vli.vliIgnore');
+    return $('vli.vliIgnore')
   }
 
   async tryCloseGoogleAd() {
     try {
-      await this.googleAddWindow.click();
+      await this.googleAddWindow.click()
     } catch (ignored) {
     }
   }
 
 
   get codeText() {
-    return $('pre').getText();
+    return $('pre').getText()
   }
 }

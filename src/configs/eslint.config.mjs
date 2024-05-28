@@ -1,5 +1,5 @@
-import wdio from 'eslint-plugin-wdio';
-import google from 'eslint-config-google';
+import wdio from 'eslint-plugin-wdio'
+import google from 'eslint-config-google'
 
 export default [
   {
@@ -18,6 +18,7 @@ export default [
       'require-jsdoc': 'off',
       'max-len': 'off',
       'space-in-parens': ['error', 'never'],
+      'semi': ['error', 'never'],
     },
   },
-];
+]

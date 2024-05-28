@@ -8,6 +8,5 @@ git push origin master --force`,
   pasteName: 'how to gain dominance among developers',
   pasteExpirationResult: '10 min',
   bashButtonText: 'Bash',
-};
-
+}
 
