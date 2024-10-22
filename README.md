@@ -1,4 +1,7 @@
-# UI-test_project
+# UI-test_project for [pastebin website][(https://pastebin.com/)
+
+
+The project contains solutions of 3 practical tasks:
 
 ## Wdio Task 1 description
 
