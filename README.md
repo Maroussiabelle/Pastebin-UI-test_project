@@ -1,7 +1,44 @@
-# UI-test_project for [pastebin website][(https://pastebin.com/)
+# UI-test_project for Pastebin website
 
+This project was developed as part of a Test Automation Bootcamp organized by [EPAM](https://www.epam.com/) in 2024. 
+It demonstrates the implementation of a Test Automation Framework (TAF) and Page Object Model (POM) for the [Pastebin website](https://pastebin.com/) 
 
-The project contains solutions of 3 practical tasks:
+## Technologies Used
+
+- **WebdriverIO**: Automation framework for writing reliable UI tests.
+- **Mocha**: JavaScript testing framework for asynchronous testing.
+
+## Project Structure
+
+- `/test/data`: test data.
+- `/test/pageObjects`: Page Object Model (pages and components).
+- `/test/specs`: test scripts for UI testing.
+
+## The project contains solutions of 3 practical tasks (see description of tasks below)
+
+## How to Run
+
+### Prerequisites
+
+1. **Node.js** (v14 or later) - Make sure it's installed.
+
+### Install Dependencies
+
+```bash
+npm install
+```
+### to run task 1 script:
+```bash
+npm run task1
+```
+### to run task 2 script:
+```bash
+npm run task2
+```
+### to run task 3 script:
+```bash
+npm run task3
+```
 
 ## Wdio Task 1 description
 
@@ -62,5 +99,6 @@ When performing a task, you must use the capabilities of WebdriverIO, a unit tes
    * Check that the code matches the one from paragraph 3
    * Expiration time is 1 week
 
-
+## Author
+This project was developed by Marija Voroncova as an individual project during the EPAM Test Automation Bootcamp in 2024.
 
